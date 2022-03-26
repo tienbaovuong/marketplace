@@ -1,0 +1,140 @@
+header{
+    background-color: white;
+}
+
+/* top bar */
+.top-bar> .container-fluid{
+    max-height: 63px;
+}
+
+.row>*{
+    padding-left: 0px;
+}
+
+.top-bar_logoSearchbox{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    height: 63px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.top-bar_logoSearchbox>li{
+    margin-left: 10px;
+}
+
+.top-bar_logoSearchbox>li>input{
+    margin-left: 10px;
+    padding-left: 43px;
+
+    width: 299px;
+    height: 36px;
+    
+    background: #EAEEEF;
+    border-radius: 80px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.top-bar_logoSearchbox>li> .searchicon{
+    position: absolute;
+    left: 190px;
+    top: 24px;
+}
+
+.top-bar_account{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    height: 63px;
+    list-style: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1756C8;
+}
+
+.top-bar_account>li>.top-bar_avatar{
+    margin-right: 11px;
+}
+
+.top-bar_account>li>.dropdown{
+    margin-right: 24px;
+}
+
+.top-bar_account>li>.top-bar_faq{
+    margin-right: 13px;
+}
+
+
+/* navigation */
+.side-nav{
+    left: 0;
+    width: 264px;
+    height: 883px;
+
+    position: absolute;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+    padding-top:  18px;
+    padding-left: 15px;
+
+    background-color: white;
+}
+
+.side-nav_list{
+    align-items: flex-start;
+    list-style: none;
+
+    padding-left: 0px;
+}
+
+.side-nav_list>.highlightNav{
+    background: #E1EBFD;
+    border-radius: 0px 50px 50px 0px;
+
+    padding: 12px;
+    padding-left: 0px;
+
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-right: 11px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #1756C8;
+}
+
+.side-nav_list>.common{
+    margin-bottom: 28px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #666666;
+}
+
+.side-nav_list>.highlightNav>img{
+    margin-right: 18px;
+    margin-left: 15px;
+}
+.side-nav_list>.common>img{
+    margin-right: 18px;
+}
+.side-nav_list>.baocao>img, .side-nav_list>.ykien>img{
+    margin-right: 13px;
+}
