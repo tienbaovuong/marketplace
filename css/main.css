@@ -12,6 +12,40 @@ main{
     font-style: normal;
 }
 
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+/* title */
+
+/* filter */
+
+/* feeds */
+.content-feeds_leftside{
+    width: 989px;
+    height: 355px;
+    margin: 0px;
+
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.content-feeds_leftside_details{
+    width: 450px;
+}
+
+#content-feeds_rightside{
+    width: 543px;
+}
+
+#rightside-cover{
+    background-image: url("../images/feeds cover.png");
+    height: 138px;
+    width: 543px;
+}
 
 /*table top*/
 .content-table_result{
