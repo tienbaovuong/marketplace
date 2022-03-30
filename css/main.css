@@ -17,6 +17,10 @@ main{
     padding-left: 0px;
 }
 /* title */
+.content-title{
+    height: 70px;
+}
+
 .content-title_left{
     width: 959px;
 }
@@ -48,7 +52,51 @@ main{
     top: 90px;
     left: 280px;
 }
+
+.content-title_right{
+    text-align: center;
+    height: 70px;
+}
+
+.content-title_right>img{
+    position: relative;
+    right: 10px;
+    top: 20px
+}
+
+.content-title_rightup{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #777777;
+}
+
+.content-title_rightdown{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    
+    color: #F5831A;
+}
+
 /* filter */
+#content-filter_searchbox{
+    height: 55px;
+    margin-right: 40px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    background-color: white;
+    padding-top: 17px;
+    padding-left: 19px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;  
+    color: #999999;
+}
 
 /* feeds */
 .content-feeds_leftside{
