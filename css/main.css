@@ -44,23 +44,24 @@ main{
 .content-title_left>.imgone{
     position: absolute;
     top: 98px;
-    left: 288px;
+    left: 302px;
 }
 
 .content-title_left>.imgtwo{
     position: absolute;
     top: 90px;
-    left: 280px;
+    left: 294px;
 }
 
 .content-title_right{
     text-align: center;
     height: 70px;
+    margin-top: -11px;
 }
 
 .content-title_right>img{
     position: relative;
-    right: 10px;
+    right: 25px;
     top: 20px
 }
 
@@ -91,6 +92,7 @@ main{
     background-color: white;
     padding-top: 17px;
     padding-left: 19px;
+    margin-bottom: 10px;
 
     font-weight: 400;
     font-size: 14px;
@@ -98,31 +100,155 @@ main{
     color: #999999;
 }
 
+.selector{
+    width: 182px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+
+    background-color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.selector>img{
+    position: relative;
+    left: 65px;
+}
+
+.selector2{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 74px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
 /* feeds */
+.content-feeds{
+    margin-top: 30px;
+}
+
 .content-feeds_leftside{
     width: 989px;
     height: 355px;
     margin: 0px;
-
+    padding-left: 0px;
+    
     background-color: white;
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-
 .content-feeds_leftside_details{
     width: 450px;
+    margin-top: -10px;
+}
+#special-box{
+    background: #46C365;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 397px;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    color: white;
+}
+#special-time>p{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);  
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+#special-time>span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+}
+#special-booking{
+    text-align: right;
+}
+#special-booking>p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+}
+#special-booking>span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 25px;
 }
 
 #content-feeds_rightside{
     width: 543px;
+    height: 355px;
+    background-color: white;
 }
-
+#content-feeds_rightsideup{
+    background-color:#E5E5E5;
+    padding-bottom: 10px;
+}
+#content-feeds_rightsideup>#one{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+}
+#content-feeds_rightsideup>#two{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1756C8;
+    padding-top: 15px;
+}
 #rightside-cover{
     background-image: url("../images/feeds cover.png");
     height: 138px;
     width: 543px;
+    margin-bottom: 20px;
+}
+.time{
+    background: #46C365;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 10px 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+#calendar{
+    position: relative;
+    top: 15px
 }
 
 /*table top*/
@@ -130,6 +256,9 @@ main{
     font-size: 18px;
     line-height: 25px;
     color: #1C1C1C;
+
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .content-table_result>.bold-letter{
@@ -137,16 +266,145 @@ main{
 }
 #soluong{
     width: 50px;
+    margin-top: 25px;
     margin-bottom: 15px;
-
     font-size: 15px;
 }
-/* table */
 
+/* table */
+#content-table_res{
+    background-color: white;
+    width: 368px;
+    height: 483px;
+    margin-bottom: 30px;
+}
+
+#cover-art{
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+#content-logo-and-name{
+    margin-top: -15px;
+    margin-left: 30px;
+}
+#content-logo-and-name>img{
+    position: relative;
+    top: 10px;
+    left: -5px;
+}
+#content-logo-and-name>p{
+    margin-left: 57px;
+    margin-top: -10px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1756C8;
+}
+#content-logo-and-name>span{
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+#content-amount-tickets>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    margin-bottom: 0px;
+    
+    color: #666666; 
+    margin-right: 10px;
+}
+#content-amount-tickets>span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: red;
+    margin-left: 10px;
+}
+
+#content-details>h1{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+}
+#content-details>p{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#content-details>img{
+    margin-left: 30px;
+}
+#content-details>span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 10px;
+}
+
+#booking-price{
+    text-align: right;
+    margin-top: 20px;
+}
+#booking-price>p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    color: #666666;
+    margin-bottom: 0px;
+}
+#booking-price>span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: red;
+}
+#booking-button>span{
+    background: #1756C8;
+    border-radius: 3px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    padding-top: 11px; padding-bottom: 11px;
+    padding-left: 32px; padding-right: 33px;
+
+    position: relative;
+    top: 30px;
+}
+#booking-button_hetve{
+    background: #D8D8D8;
+    border-radius: 3px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #666666;
+
+    padding-top: 11px; padding-bottom: 11px;
+    padding-left: 32px; padding-right: 33px;
+
+    position: relative;
+    top: 48px;
+    left: 245px;
+}
 
 /*table bottom*/
 .content-table_pagenum{
     margin-top: 21px;
+    margin-bottom: 20px;
 }
 .content-table_currentpage{
     border: 1px solid #1756C8;

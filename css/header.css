@@ -10,7 +10,10 @@ header{
 .row>*{
     padding-left: 0px;
 }
-
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .top-bar_logoSearchbox{
     display: flex;
     flex-flow: row nowrap;
