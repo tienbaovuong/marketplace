@@ -17,7 +17,37 @@ main{
     padding-left: 0px;
 }
 /* title */
+.content-title_left{
+    width: 959px;
+}
 
+.content-title_left>span{
+    margin-left: 50px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.content-title_left>p{
+    margin-top: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.content-title_left>.imgone{
+    position: absolute;
+    top: 98px;
+    left: 288px;
+}
+
+.content-title_left>.imgtwo{
+    position: absolute;
+    top: 90px;
+    left: 280px;
+}
 /* filter */
 
 /* feeds */
