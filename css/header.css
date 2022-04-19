@@ -3,8 +3,9 @@ header{
 }
 
 /* top bar */
-.top-bar> .container-fluid{
+.top-bar{
     max-height: 63px;
+    width: 100%;
 }
 
 .row>*{
@@ -14,27 +15,24 @@ header{
     margin-left: 0px;
     margin-right: 0px;
 }
+
 .top-bar_logoSearchbox{
-    display: flex;
-    flex-flow: row nowrap;
+    display: inline-block;
     align-items: center;
 
     height: 63px;
-    list-style: none;
     padding-left: 0px;
+    width: 60%;
 }
-
-.top-bar_logoSearchbox>li{
-    margin-left: 10px;
+.top-bar_logoSearchbox .logo{
+    margin-left: 20px;
 }
-
-.top-bar_logoSearchbox>li>input{
-    margin-left: 10px;
+.top-bar_logoSearchbox .top-bar_searchbox{
+    margin-bottom: 20px;
     padding-left: 43px;
-
-    width: 299px;
     height: 36px;
     
+    width: 40%;
     background: #EAEEEF;
     border-radius: 80px;
 
@@ -45,19 +43,15 @@ header{
     color: #999999;
 }
 
-.top-bar_logoSearchbox>li> .searchicon{
-    position: absolute;
-    left: 190px;
-    top: 24px;
+.top-bar_logoSearchbox .searchicon{
+    position: relative;
+    left: 35px;
 }
 
 .top-bar_account{
-    display: flex;
-    flex-flow: row nowrap;
     align-items: center;
-
+    float: right;
     height: 63px;
-    list-style: none;
 
     font-style: normal;
     font-weight: 400;
@@ -66,15 +60,15 @@ header{
     color: #1756C8;
 }
 
-.top-bar_account>li>.top-bar_avatar{
-    margin-right: 11px;
+.top-bar_account .top-bar_avatar{
+    margin-right: -10px;
 }
 
-.top-bar_account>li>.dropdown{
+.top-bar_account .dropdown{
     margin-right: 24px;
 }
 
-.top-bar_account>li>.top-bar_faq{
+.top-bar_account .top-bar_faq{
     margin-right: 13px;
 }
 
@@ -82,7 +76,7 @@ header{
 /* navigation */
 .side-nav{
     left: 0;
-    width: 264px;
+    width: calc(13%);
     height: 883px;
 
     position: absolute;

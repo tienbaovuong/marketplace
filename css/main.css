@@ -1,10 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     background-color: #E5E5E5;
 }
 
 main{
-    border-left: 264px solid #E5E5E5;
+    margin-left: 13%;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 33px;
@@ -16,9 +21,11 @@ main{
     padding-right: 0px;
     padding-left: 0px;
 }
+
 /* title */
 .content-title{
     height: 70px;
+    margin-bottom: 15px;
 }
 
 .content-title_left{
@@ -26,8 +33,6 @@ main{
 }
 
 .content-title_left>span{
-    margin-left: 50px;
-
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -42,15 +47,15 @@ main{
 }
 
 .content-title_left>.imgone{
-    position: absolute;
-    top: 98px;
-    left: 302px;
+    position: relative;
+    top: -8px;
+    left: -31px;
 }
 
 .content-title_left>.imgtwo{
-    position: absolute;
-    top: 90px;
-    left: 294px;
+    position: relative;
+    top: -8px;
+    left: 0px;
 }
 
 .content-title_right{
@@ -82,18 +87,18 @@ main{
 }
 
 /* filter */
-#content-filter_searchbox{
-    height: 55px;
-    margin-right: 40px;
+.content-filter_searchbox{
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     border-radius: 3px;
-
     background-color: white;
+
     padding-top: 17px;
     padding-left: 19px;
     margin-bottom: 10px;
+    margin-right: 40px;
 
+    height: 55px;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;  
@@ -101,7 +106,7 @@ main{
 }
 
 .selector{
-    width: 182px;
+    width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 15px;
@@ -110,11 +115,14 @@ main{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
 }
 
 .selector>img{
     position: relative;
-    left: 65px;
+    left: 50%;
 }
 
 .selector2{
@@ -125,6 +133,9 @@ main{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
 }
 /* feeds */
 .content-feeds{
@@ -132,10 +143,11 @@ main{
 }
 
 .content-feeds_leftside{
-    width: 989px;
-    height: 355px;
     margin: 0px;
     padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     
     background-color: white;
     list-style: none;
@@ -143,25 +155,31 @@ main{
     flex-flow: row nowrap;
     align-items: center;
 }
+.content-feeds_leftside_photo{
+    width: 50%;
+}
+.content-feeds_leftside_photo>img{
+    width: 100%;
+}
 .content-feeds_leftside_details{
-    width: 450px;
+    width: 50%;
     margin-top: -10px;
 }
-#special-box{
+
+.special-box{
     background: #46C365;
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 
-    margin-left: 30px;
     margin-top: 10px;
-    width: 397px;
+    width: 100%;
 
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 24px;
     color: white;
 }
-#special-time>p{
+.special-time>p{
     font-weight: 600;
     font-size: 26px;
     line-height: 35px;
@@ -171,21 +189,21 @@ main{
     margin-top: 6px;
     margin-bottom: 4px;
 }
-#special-time>span{
+.special-time>span{
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: -0.02em;
 }
-#special-booking{
+.special-booking{
     text-align: right;
 }
-#special-booking>p{
+.special-booking>p{
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
 }
-#special-booking>span{
+.special-booking>span{
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -200,32 +218,40 @@ main{
     padding-right: 25px;
 }
 
-#content-feeds_rightside{
+.content-feeds_rightside{
     width: 543px;
     height: 355px;
     background-color: white;
 }
-#content-feeds_rightsideup{
+.content-feeds_rightsideup{
     background-color:#E5E5E5;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
+
+    display: inline-block;
+    width: 100%;
 }
-#content-feeds_rightsideup>#one{
+.content-feeds_rightsideup>.one{
     font-weight: 600;
     font-size: 28px;
     line-height: 38px;
+    float: left;
 }
-#content-feeds_rightsideup>#two{
+.content-feeds_rightsideup>.two{
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: #1756C8;
+
     padding-top: 15px;
+    float: right;
 }
-#rightside-cover{
+.rightside-cover{
     background-image: url("../images/feeds cover.png");
+    background-color:#E5E5E5;
     height: 138px;
-    width: 543px;
-    margin-bottom: 20px;
+    width: 100%;
+
+    display: inline-block;
 }
 .time{
     background: #46C365;
@@ -243,16 +269,23 @@ main{
     padding-right: 10px;
 
     position: relative;
-    top: 6px;
+    top: 8px;
     left: 20px;
 }
-#calendar{
+.calendar{
+    float: right;
     position: relative;
-    top: 15px
+    top:6px;
+    right: 20px;
 }
 
 /*table top*/
-.content-table_result{
+.table-top{
+    display: inline-block;
+    width: 100%;
+}
+.content-table_find_result{
+    display: inline-block;
     font-size: 18px;
     line-height: 25px;
     color: #1C1C1C;
@@ -260,8 +293,7 @@ main{
     margin-top: 25px;
     margin-bottom: 30px;
 }
-
-.content-table_result>.bold-letter{
+.content-table_find_result>.bold-letter{
     font-weight: 600;
 }
 #soluong{
@@ -270,106 +302,119 @@ main{
     margin-bottom: 15px;
     font-size: 15px;
 }
+.content-table_itemnum{
+    float: right;
+}
+
 
 /* table */
-#content-table_res{
-    background-color: white;
-    width: 368px;
-    height: 483px;
+.event_item {
+    display: inline-block;
+    width: 100%;
+    height: calc(100% - 30px);
+    border-radius: 5px 5px 0 0;
+
     margin-bottom: 30px;
+    background-color: white;
 }
-
-#cover-art{
-    margin-bottom: 20px;
-    padding: 0px;
+.event_item .photo{
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
 }
-
-#content-logo-and-name{
-    margin-top: -15px;
-    margin-left: 30px;
+.event_body{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 20px 15px;
+    
 }
-#content-logo-and-name>img{
+.event_body .organization{
+    display: inline-block;
+    width: 100%;
     position: relative;
-    top: 10px;
-    left: -5px;
 }
-#content-logo-and-name>p{
-    margin-left: 57px;
-    margin-top: -10px;
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: #1756C8;
+.event_body .organization .logo {
+    width: 50px;
+    height: 40px;
+    float: left;
 }
-#content-logo-and-name>span{
-    margin-left: 6px;
+.event_body .organization .organization_name {
+    /* display: inline-block; */
+    width: calc(100% - 50px);
+    float: left;
+    padding-left: 10px;
+}
+.event_body .organization .organization_name>span {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: #666666;
+    margin-bottom: 0;
 }
-
-#content-amount-tickets>p{
+.event_body .organization .organization_name>p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1756C8;
+    margin-bottom: 0;
+}
+.event_body .organization .ticket {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.event_body .organization .ticket>p{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-align: right;
     margin-bottom: 0px;
-    
-    color: #666666; 
-    margin-right: 10px;
+    color: #666666;
 }
-#content-amount-tickets>span{
+.event_body .organization .ticket>span{
+    text-align: right;
     font-weight: 600;
     font-size: 20px;
     line-height: 22px;
     color: red;
-    margin-left: 10px;
 }
-
-#content-details>h1{
-    margin-left: 30px;
+.event_body>h1{
     font-weight: 600;
     font-size: 28px;
     line-height: 36px;
 }
-#content-details>p{
-    margin-left: 20px;
+.event_body>.title{
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
 }
-
-#content-details>img{
-    margin-left: 30px;
+.event_price{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
 }
-#content-details>span{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    margin-left: 10px;
-}
-
-#booking-price{
+.event_price .price{
+    width: calc(100% - 130px);
+    padding-right: 10px;
+    float: left;
     text-align: right;
-    margin-top: 20px;
 }
-#booking-price>p{
+.event_price .price>span{
     font-weight: 400;
     font-size: 10px;
     line-height: 22px;
     color: #666666;
     margin-bottom: 0px;
 }
-#booking-price>span{
+.event_price .price>p{
     font-weight: 600;
     font-size: 20px;
     line-height: 22px;
     color: red;
+    margin: 0;
 }
-#booking-button>span{
+.event_price .booking-button{
     background: #1756C8;
     border-radius: 3px;
 
@@ -381,28 +426,26 @@ main{
     padding-top: 11px; padding-bottom: 11px;
     padding-left: 32px; padding-right: 33px;
 
-    position: relative;
-    top: 30px;
+    float: right;
 }
-#booking-button_hetve{
+.event_price .booking-button_no_ticket{
     background: #D8D8D8;
     border-radius: 3px;
 
     font-weight: 600;
     font-size: 15px;
-    line-height: 18px;
-    color: #666666;
+    line-height: 20px;
+    color: #FFFFFF;
 
     padding-top: 11px; padding-bottom: 11px;
     padding-left: 32px; padding-right: 33px;
 
-    position: relative;
-    top: 48px;
-    left: 245px;
+    float: right;
 }
 
 /*table bottom*/
 .content-table_pagenum{
+    text-align: center;
     margin-top: 21px;
     margin-bottom: 20px;
 }

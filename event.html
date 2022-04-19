@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Event</title>
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/0da8642550.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <section class="top-bar">
+            <div class="top-bar_logoSearchbox">
+                <a href=""><img class="logo" src="images/logo-itourism.png"></img></a>
+                <img class="searchicon" src="images/Search.png">
+                <input class="top-bar_searchbox"
+                        placeholder="#codebooking, tour name, customer ..."
+                        type="text">
+            </div>
+            <div class="top-bar_account">
+                <a href="">
+                    <svg class="top-bar_avatar" height="63" width="80">
+                        <circle class="avatar" cx="50" cy="32" fill="#C4C4C4" r="16"/>
+                    </svg>
+                </a>
+                <span>[Your name] </span>
+                <img class="dropdown" src="images/Dropdown.png">
+                <a href=""><img class="top-bar_faq" src="images/FAQ.png"></a>
+            </ul>
+        </section>
+
+        <nav class="side-nav">
+            <ul class="side-nav_list">
+                <li class="common"><img src="images/hosodoanhnghiep.png">Hồ sơ doanh nghiệp</li>
+                <li class="common"><img src="images/loaihinhdoanhnghiep.png">Loại hình doanh nghiệp</li>
+                <li class="common"><img src="images/phihoivien.png">Phí hội viên</li>
+                <li class="highlightNav"><img src="images/sukien.png">Sự kiện</li>
+                <li class="common"><img src="images/quanlytour.png">Quản lý tour</li>
+                <li class="common"><img src="images/khuyenmai.png">Khuyến mãi</li>
+                <li class="common"><img src="images/diemthamquan.png">Điểm tham quan</li>
+                <li class="common"><img src="images/quanlytour.png">Bookings</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id = page>
+        <section class="content-title">
+            <div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="content-title_left">
+                            <img alt="" class="imgtwo" src="images/Ellipse 39.png">
+                            <img alt="" class="imgone" src="images/Home.png">
+                            <span>Sự kiện</span>
+                            <p>Kết nối người mua và người bán tiềm năng tất cả trong một nền tảng để giúp thuê, mua, trao
+                            đổi hoặc thương lượng</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="content-title_right">
+                            <img alt="" src="images/Line 98.png">
+                            <span class="content-title_rightup">TỔNG SỰ KIỆN</span>
+                            <p class="content-title_rightdown">157</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="content-title_right">
+                            <img alt="" src="images/Line 98.png">
+                            <span class="content-title_rightup">SẮP DIỄN RA</span>
+                            <p class="content-title_rightdown">1798</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="content-title_right">
+                            <img alt="" src="images/Line 98.png">
+                            <span class="content-title_rightup">ĐANG DIỄN RA</span>
+                            <p class="content-title_rightdown">85</p>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="content-title_right">
+                            <img alt="" src="images/Line 98.png">
+                            <span class="content-title_rightup">ĐÃ KẾT THÚC</span>
+                            <p class="content-title_rightdown">4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-filter">
+            <div class="content-filter_searchbox">
+                <img alt="" src="images/search2.png">&nbsp;&nbsp;&nbsp;&nbsp;Nhập để tìm kiếm sự kiện
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-2">
+                        <select class="selector">
+                            <option value="">Loại sự kiện</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <select class="selector">
+                            <option value="">Thời lượng</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <div class="selector2">Diễn ra</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="selector">dd/mm/yy <img alt="" src="images/calendar.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-feeds">
+            <div>
+                <div class="row">
+                    <div class="col-md-7">
+                            <ul class="content-feeds_leftside">
+                                <li class="content-feeds_leftside_details">
+                                    <div class="event_body">
+                                        <div class="organization">
+                                            <div class="logo">
+                                                <img alt="" src="images/logo_dulichviet.png">
+                                            </div>
+                                            <div class="organization_name">
+                                                <span>Tổ chức bởi</span>
+                                                <p>Du lịch Việt</p>
+                                            </div>
+                                            <div class="ticket">
+                                                <p>Chỉ còn</p>
+                                                <span>5 vé</span>
+                                            </div>
+                                        </div>
+                                        <h1>YEAR END PARTY HÀNH TRÌNH KẾT NỐI</h1>
+                                        <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;10/04/2022</p>
+                                        <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                                        <div class="special-box">
+                                            <div class="row justify-content-between">
+                                                <div class="col-6">
+                                                    <div class="special-time">
+                                                        <p>10&nbsp;:&nbsp;20&nbsp;:&nbsp;43</p>
+                                                        <span>&nbsp;Ngày&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giờ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phút</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="special-booking">
+                                                        <p>chỉ từ 2.550.000đ</p>
+                                                        <span>Đặt ngay</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>        
+                                    </div>
+                                </li>
+                                <li class = "content-feeds_leftside_photo"><img src="images/yearendparty.png"></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="content-feeds_rightside">
+                            <div class="content-feeds_rightsideup">
+                                <div class="one">Sự kiện của bạn</div>
+                                <div class="two">Xem toàn bộ&nbsp;&nbsp;
+                                    <img alt="" src="images/xemtoanbo.png">
+                                </div>    
+                            </div>
+                            <div class="rightside-cover">
+                                <span class="time">
+                                    10 ngày : 10 giờ : 43 phút
+                                </span>
+                                <div class="calendar"><img alt="" src="images/15-4.png"></div>
+                            </div>
+                            <div class="event_body">
+                                <div class="organization">
+                                    <div class="logo"><img alt="" src="images/logo_senxanh.png"></div>
+                                    <div class="organization_name">
+                                        <span>Tổ chức bởi</span>
+                                        <p>Sen Xanh Event</p>
+                                    </div>
+                                </div>
+                                <h3 class="title">Việt Nam tham gia quảng bá du lịch tại “Tuần lễ Busan - ASEAN 2021”</h3>
+                                <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="table_top">
+            <div class="content-table_find_result">
+                <span>Tìm thấy</span>
+                <span class="bold-letter"> 52 Sự kiện</span>
+            </div>
+            <div class="content-table_itemnum">
+                Số lượng hiển thị &nbsp; <select id="soluong" name="soluong">
+                <option value="12">12</option>
+            </select>
+        </section>
+
+        <section class="content-table">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                       <div class="event_item">
+                           <img src="images/cover1.png" alt="" class="photo">
+                           <div class="event_body">
+                            <div class="organization">
+                                <div class="logo">
+                                    <img alt="" src="images/logo_senxanh.png">
+                                </div>
+                                <div class="organization_name">
+                                    <span>Tổ chức bởi</span>
+                                    <p>Sen Xanh Event</p>
+                                </div>
+                                <div class="ticket">
+                                    <p>Chỉ còn</p>
+                                    <span>5 vé</span>
+                                </div>
+                            </div>
+                            <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                            <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                            <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                            <div class="event_price">
+                                <div class="price">
+                                    <span>Chỉ từ</span>
+                                    <p>2.550.000đ</p>
+                                </div>
+                                <div class="booking-button">
+                                    <span>Đặt ngay</span>
+                                </div>
+                            </div>
+                           </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover2.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Câu lạc bộ Lữ hành UNESC...</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>0 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022 - 16/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Số 18 Trung tâm Khoa học và Xã hội, Hà Nội...</p>
+                             <div class="event_price">
+                                 <div class="booking-button_no_ticket">
+                                     <span>Hết vé</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover3.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover4.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover5.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover6.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover7.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover8.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover9.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover10.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover11.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="event_item">
+                            <img src="images/cover12.png" alt="" class="photo">
+                            <div class="event_body">
+                             <div class="organization">
+                                 <div class="logo">
+                                     <img alt="" src="images/logo_senxanh.png">
+                                 </div>
+                                 <div class="organization_name">
+                                     <span>Tổ chức bởi</span>
+                                     <p>Sen Xanh Event</p>
+                                 </div>
+                                 <div class="ticket">
+                                     <p>Chỉ còn</p>
+                                     <span>5 vé</span>
+                                 </div>
+                             </div>
+                             <h3 class="title">Hanoi : Know the truth -- What's good for me to help me grow. Free Meditate</h1>
+                             <p class="event_date"><img alt="" src="images/clock.png">&nbsp;&nbsp;14/04/2022</p>
+                             <p class="event_venue"><img alt="" src="images/position.png">&nbsp;&nbsp;Vina Events, Hà Nội</p>
+                             <div class="event_price">
+                                 <div class="price">
+                                     <span>Chỉ từ</span>
+                                     <p>2.550.000đ</p>
+                                 </div>
+                                 <div class="booking-button">
+                                     <span>Đặt ngay</span>
+                                 </div>
+                             </div>
+                            </div> 
+                         </div>
+                     </div>
+                </div>
+            </div>
+            
+
+
+            
+        </section>
+
+        <section class="content-table_pagenum">
+            <img src="images/prevpage.png">
+            <span>Trang</span>
+            <span class="content-table_currentpage">1</span>
+            <span>trong tổng số 5</span>
+            <img src="images/nextpage.png">
+        </section>
+    </main>
+</body>
