@@ -8,9 +8,6 @@ header{
     width: 100%;
 }
 
-.row>*{
-    padding-left: 0px;
-}
 .row{
     margin-left: 0px;
     margin-right: 0px;

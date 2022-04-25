@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <section class="top-bar">
+        <div class="top-bar">
             <div class="top-bar_logoSearchbox">
                 <a href=""><img class="logo" src="images/logo-itourism.png"></img></a>
                 <img class="searchicon" src="images/Search.png">
@@ -38,8 +38,8 @@
                 <span>[Your name] </span>
                 <img class="dropdown" src="images/Dropdown.png">
                 <a href=""><img class="top-bar_faq" src="images/FAQ.png"></a>
-            </ul>
-        </section>
+            </div>
+        </div>
 
         <nav class="side-nav">
             <ul class="side-nav_list">
@@ -56,7 +56,7 @@
     </header>
 
     <main id = page>
-        <section class="content-title">
+        <div class="content-title">
             <div>
                 <div class="row">
                     <div class="col-8">
@@ -70,68 +70,65 @@
                     </div>
                     <div class="col-1">
                         <div class="content-title_right">
-                            <img alt="" src="images/Line 98.png">
+                            <span class="border-left"></span>
                             <span class="content-title_rightup">TỔNG SỰ KIỆN</span>
                             <p class="content-title_rightdown">157</p>
                         </div>
                     </div>
                     <div class="col-1">
                         <div class="content-title_right">
-                            <img alt="" src="images/Line 98.png">
                             <span class="content-title_rightup">SẮP DIỄN RA</span>
                             <p class="content-title_rightdown">1798</p>
                         </div>
                     </div>
                     <div class="col-1">
                         <div class="content-title_right">
-                            <img alt="" src="images/Line 98.png">
                             <span class="content-title_rightup">ĐANG DIỄN RA</span>
                             <p class="content-title_rightdown">85</p>
                         </div>
                     </div>
                     <div class="col-1">
                         <div class="content-title_right">
-                            <img alt="" src="images/Line 98.png">
                             <span class="content-title_rightup">ĐÃ KẾT THÚC</span>
                             <p class="content-title_rightdown">4</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="content-filter">
-            <div class="content-filter_searchbox">
-                <img alt="" src="images/search2.png">&nbsp;&nbsp;&nbsp;&nbsp;Nhập để tìm kiếm sự kiện
-            </div>
-            <div>
+        <div class="content-filter">
+            <form>
+                <div class="input-group">
+                    <img alt="" src="images/search2.png" class="content-filter_searchIcon">
+                    <input type="text" class="form-control" id="content-filter_searchbox" placeholder="Nhập để tìm kiếm sự kiện">
+                </div>
                 <div class="row">
-                    <div class="col-2">
-                        <select class="selector">
-                            <option value="">Loại sự kiện</option>
+                    <div class="col-md-2">
+                        <select id="eventType" class="selector">
+                            <option selected>Loại sự kiện</option>
                         </select>
                     </div>
-                    <div class="col-2">
-                        <select class="selector">
-                            <option value="">Thời lượng</option>
+                    <div class="col-md-2">
+                        <select id="timeType" class="selector">
+                            <option selected>Thời lượng</option>
                         </select>
                     </div>
-                    <div class="col-auto">
-                        <div class="selector2">Diễn ra</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="selector">dd/mm/yy <img alt="" src="images/calendar.png"></div>
+                    <label for="dayType" class="col-md-1">Diễn ra</label>
+                    <div class="col-md-2">
+                        <div class = "selector" id="dayType">dd/mm/yy <img alt="" src="images/calendar.png"></div>
                     </div>
                 </div>
-            </div>
-        </section>
+                
+            </form>
+        </div>
 
         <section class="content-feeds">
             <div>
                 <div class="row">
                     <div class="col-md-7">
-                            <ul class="content-feeds_leftside">
-                                <li class="content-feeds_leftside_details">
+                            <div class="content-feeds_leftside">
+                                <div class="content-feeds_leftside_details">
                                     <div class="event_body">
                                         <div class="organization">
                                             <div class="logo">
@@ -166,9 +163,9 @@
                                             </div>
                                         </div>        
                                     </div>
-                                </li>
-                                <li class = "content-feeds_leftside_photo"><img src="images/yearendparty.png"></li>
-                            </ul>
+                                </div>
+                                <div class = "content-feeds_leftside_photo"><img  src="images/yearendparty.png"></img></div>
+                            </div>
                     </div>
                     <div class="col-md-5">
                         <div class="content-feeds_rightside">
@@ -201,7 +198,7 @@
             </div>
         </section>
 
-        <section class="table_top">
+        <div class="table_top">
             <div class="content-table_find_result">
                 <span>Tìm thấy</span>
                 <span class="bold-letter"> 52 Sự kiện</span>
@@ -210,7 +207,7 @@
                 Số lượng hiển thị &nbsp; <select id="soluong" name="soluong">
                 <option value="12">12</option>
             </select>
-        </section>
+        </div>
 
         <section class="content-table">
             <div class="container-fluid">
@@ -473,7 +470,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="event_item">
-                            <img src="images/cover9.png" alt="" class="photo">
+                            <img src="images/cover5.png" alt="" class="photo">
                             <div class="event_body">
                              <div class="organization">
                                  <div class="logo">
@@ -505,7 +502,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="event_item">
-                            <img src="images/cover10.png" alt="" class="photo">
+                            <img src="images/cover6.png" alt="" class="photo">
                             <div class="event_body">
                              <div class="organization">
                                  <div class="logo">
@@ -537,7 +534,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="event_item">
-                            <img src="images/cover11.png" alt="" class="photo">
+                            <img src="images/cover7.png" alt="" class="photo">
                             <div class="event_body">
                              <div class="organization">
                                  <div class="logo">
@@ -569,7 +566,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="event_item">
-                            <img src="images/cover12.png" alt="" class="photo">
+                            <img src="images/cover8.png" alt="" class="photo">
                             <div class="event_body">
                              <div class="organization">
                                  <div class="logo">
@@ -607,12 +604,12 @@
             
         </section>
 
-        <section class="content-table_pagenum">
+        <div class="content-table_pagenum">
             <img src="images/prevpage.png">
             <span>Trang</span>
             <span class="content-table_currentpage">1</span>
             <span>trong tổng số 5</span>
             <img src="images/nextpage.png">
-        </section>
+        </div>
     </main>
 </body>
